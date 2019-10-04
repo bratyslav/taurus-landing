@@ -8,11 +8,14 @@ a {
   text-decoration: none;
   color: black; }
 
+ul {
+  padding: 0;
+  list-style: none; }
+
 .preheader {
   display: flex;
   align-items: center;
-  height: 40px;
-  padding: 0 80px;
+  padding: 5px 80px;
   background-color: #ececec; }
   .preheader a:not(:last-child) {
     margin-right: 5px; }
@@ -37,6 +40,34 @@ a {
       background-color: #6b6b6b; }
     .preheader .logo:active {
       background-color: grey; }
+
+.navigation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px; }
+.navigation__logo {
+  height: 60px; }
+.navigation ul {
+  display: flex; }
+.navigation ._active a {
+  color: #ff002b;
+  cursor: default; }
+  .navigation ._active a:hover {
+    color: #ff002b; }
+  .navigation ._active a:active {
+    color: #ff002b; }
+.navigation li a {
+  color: gray;
+  cursor: pointer; }
+.navigation li a:hover {
+  color: black; }
+.navigation li a:active {
+  color: gray; }
+.navigation li:not(:last-child):after {
+  content: '|';
+  margin: 0 5px;
+  color: gray; }
 
 @media (max-width: 720px) {
   .preheader {
