@@ -31,13 +31,13 @@ const navLinks = [
 // Render a navigation list
 const navList = document.getElementById('navList');
 
-navList.innerHTML=`
-  ${navLinks.map(link => (
-    `<li class="${link.active ? '_active' : ''}">
-      <a>${link.title}<a/>
-    </li>`
-  ))}
-`.replace(/,/g, '');
+navList.innerHTML=`${
+  navLinks.map(link => (`
+    <li class="${link.active ? '_active' : ''}">
+      <a>${link.title}</a>
+    </li>
+  `))
+}`.replace(/,/g, '');
 
 
 

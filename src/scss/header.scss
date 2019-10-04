@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: min-content;
 
   &__logo {
@@ -116,8 +117,7 @@
 }
 
 
-
-.sm-menu-button {
+.sm-nav-button {
   display: none;
 }
 
@@ -155,8 +155,20 @@
     }
   }
 
-  .sm-menu-button {
+  .sm-nav-button {
+    width: 40px;
+    height: 40px;
     margin-right: 8px;
     display: block;
+
+    background-image: url('../images/nav-list-icon.svg');
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    background-color: white;
+    border: 2px solid #464646;
+    border-radius: 5px;
+    cursor: pointer;
   }
 }
