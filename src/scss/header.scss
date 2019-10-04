@@ -152,6 +152,10 @@
     & li {
       border-top: 1px solid #d4d4d4;
       padding: 10px 8px;
+
+      &:after {
+        display: none;
+      }
     }
   }
 
