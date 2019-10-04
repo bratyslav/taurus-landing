@@ -17,8 +17,10 @@ ul {
   align-items: center;
   padding: 5px 80px;
   background-color: #ececec; }
-  .preheader a:not(:last-child) {
-    margin-right: 5px; }
+  .preheader a {
+    height: 25px; }
+    .preheader a:not(:last-child) {
+      margin-right: 5px; }
   .preheader__contacts {
     margin-right: auto; }
   .preheader__contacts a {
@@ -59,7 +61,8 @@ ul {
     color: #ff002b; }
 .navigation li a {
   color: gray;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 18px; }
 .navigation li a:hover {
   color: black; }
 .navigation li a:active {
@@ -69,8 +72,11 @@ ul {
   margin: 0 5px;
   color: gray; }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
+  .navigation__wrapper {
+    padding: 0 8px; }
+
   .preheader {
-    padding: 0 8px; } }
+    padding: 5px 8px; } }
 
 /*# sourceMappingURL=style.css.map */

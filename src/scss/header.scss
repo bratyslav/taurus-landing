@@ -5,8 +5,12 @@
 
   background-color: #ececec;
 
-  & a:not(:last-child) {
-    margin-right: 5px;
+  & a {
+    height: 25px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
   }
 
   &__contacts {
@@ -83,6 +87,7 @@
     & a {
       color: gray;
       cursor: pointer;
+      font-size: 18px;
     }
 
     & a:hover {
@@ -103,8 +108,14 @@
 
 
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
+  .navigation {
+    &__wrapper {
+      padding: 0 8px;
+    }
+  }
+
   .preheader {
-    padding: 0 8px;
+    padding: 5px 8px;
   }
 }
