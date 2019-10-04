@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.preheader {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 80px;
+  background-color: #ececec; }
+  .preheader a:not(:last-child) {
+    margin-right: 5px; }
+  .preheader__contacts {
+    margin-right: auto; }
+  .preheader__contacts a {
+    transition: color 100ms linear; }
+    .preheader__contacts a:hover {
+      color: #555; }
+    .preheader__contacts a:active {
+      color: black; }
+  .preheader .logo {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: grey;
+    cursor: pointer; }
+    .preheader .logo[src*="facebook"] {
+      padding: 5px 6px 5px 4px; }
+    .preheader .logo:hover {
+      background-color: #6b6b6b; }
+    .preheader .logo:active {
+      background-color: grey; }
+
+@media (max-width: 720px) {
+  .preheader {
+    padding: 0 8px; } }
+
+/*# sourceMappingURL=style.css.map */

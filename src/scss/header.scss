@@ -1,0 +1,60 @@
+header {
+
+}
+
+.preheader {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 80px;
+
+  background-color: #ececec;
+
+  & a:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  &__contacts {
+    margin-right: auto;
+  }
+
+  &__contacts a {
+    transition: color 100ms linear;
+
+    &:hover {
+      color: #555;
+    }
+
+    &:active {
+      color: black;
+    }
+  }
+
+  & .logo {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+
+    border-radius: 5px;
+    background-color: grey;
+    cursor: pointer;
+
+    &[src*="facebook"] {
+      padding: 5px 6px 5px 4px;
+    }
+
+    &:hover {
+      background-color: #6b6b6b;
+    }
+
+    &:active {
+      background-color: grey;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .preheader {
+    padding: 0 8px;
+  }
+}
