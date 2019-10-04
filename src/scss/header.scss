@@ -81,15 +81,15 @@
   }
 
   & ._active a {
-    color: #ff002b;
-    cursor: default;
+    color: #ff002b !important;
+    cursor: default !important;
 
     &:hover {
-      color: #ff002b;
+      color: #ff002b !important;
     }
 
     &:active {
-      color: #ff002b;
+      color: #ff002b !important;
     }
   }
 

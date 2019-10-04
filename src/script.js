@@ -25,6 +25,42 @@ const navLinks = [
     active: false,
   },
 ];
+const technologiesList = [
+  {
+    name: 'angular',
+    imageUrl: '../images/angular-2.png',
+  },
+  {
+    name: 'jquery',
+    imageUrl: '../images/jquery.png',
+  },
+  {
+    name: 'react',
+    imageUrl: '../images/react-1.png',
+  },
+  {
+    name: 'nintex',
+    imageUrl: '../images/nintex_alt.png',
+  },
+  {
+    name: 'powerbi',
+    imageUrl: '../images/powerBI_color_long-1.png',
+  },
+  {
+    name: 'xamarin',
+    imageUrl: '../images/xamarin_color.png',
+  },
+];
+const featuresList = [
+  '../images/img1-2.png',
+  '../images/img2-1.png',
+  '../images/img3-1.png',
+  '../images/img4-1.png',
+  '../images/img5-1.png',
+  '../images/img6-1.png',
+  '../images/img7-1.png',
+  '../images/img8-1.png',
+];
 
 
 
@@ -36,6 +72,28 @@ navList.innerHTML=`${
     <li class="${link.active ? '_active' : ''}">
       <a>${link.title}</a>
     </li>
+  `))
+}`.replace(/,/g, '');
+
+
+
+// Render a technologies
+const technologies = document.getElementById('technologies');
+
+technologies.innerHTML = `${
+  technologiesList.map(technology => (`
+    <img src="${technology.imageUrl}">
+  `))
+}`.replace(/,/g, '');
+
+
+
+// Render a features
+const features = document.getElementById('features');
+
+features.innerHTML = `${
+  featuresList.map(feature => (`
+    <img src="${feature}">
   `))
 }`.replace(/,/g, '');
 
