@@ -42,17 +42,16 @@ navList.innerHTML=`
 
 
 // Toggle of navigation visibility in small screens
-let smMenuIsVisible = false;
-let windowWidth = window.innerWidth;
+let smMenuIsVisible = true;
 
 const toggleSmMenuVisibility = () => {
+  smMenuIsVisible = !smMenuIsVisible;
+
   if (smMenuIsVisible) {
     navList.classList.remove('_hidden');
   } else {
     navList.classList.add('_hidden');
   };
-
-  smMenuIsVisible = !smMenuIsVisible;
 };
 
 if (window.innerWidth <= 960) {
@@ -66,5 +65,6 @@ window.addEventListener('resize', () => {
 
   if (window.innerWidth <= 960) {
     navList.classList.add('_hidden');
+    smMenuIsVisible = false;
   };
 });
