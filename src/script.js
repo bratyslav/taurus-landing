@@ -1,3 +1,4 @@
+// Arrays of data
 const navLinks = [
   {
     title: 'Home',
@@ -25,7 +26,11 @@ const navLinks = [
   },
 ];
 
+
+
+// Render a navigation list
 const navList = document.getElementById('navList');
+
 navList.innerHTML=`
   ${navLinks.map(link => (
     `<li class="${link.active ? '_active' : ''}">
@@ -33,3 +38,33 @@ navList.innerHTML=`
     </li>`
   ))}
 `.replace(/,/g, '');
+
+
+
+// Toggle of navigation visibility in small screens
+let smMenuIsVisible = false;
+let windowWidth = window.innerWidth;
+
+const toggleSmMenuVisibility = () => {
+  if (smMenuIsVisible) {
+    navList.classList.remove('_hidden');
+  } else {
+    navList.classList.add('_hidden');
+  };
+
+  smMenuIsVisible = !smMenuIsVisible;
+};
+
+if (window.innerWidth <= 960) {
+  toggleSmMenuVisibility();
+};
+
+window.addEventListener('resize', () => {
+  if(window.innerWidth > 960) {
+    navList.classList.remove('_hidden');
+  };
+
+  if (window.innerWidth <= 960) {
+    navList.classList.add('_hidden');
+  };
+});

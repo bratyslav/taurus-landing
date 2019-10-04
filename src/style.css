@@ -1,6 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
+._hidden {
+  display: none !important; }
+
 body {
   margin: 0; }
 
@@ -10,7 +13,22 @@ a {
 
 ul {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: min-content; }
+  .header__logo {
+    height: 60px;
+    margin-left: 80px; }
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0; }
 
 .preheader {
   display: flex;
@@ -43,40 +61,61 @@ ul {
     .preheader .logo:active {
       background-color: grey; }
 
-.navigation__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 80px; }
-.navigation__logo {
-  height: 60px; }
-.navigation ul {
-  display: flex; }
-.navigation ._active a {
-  color: #ff002b;
-  cursor: default; }
-  .navigation ._active a:hover {
-    color: #ff002b; }
-  .navigation ._active a:active {
-    color: #ff002b; }
-.navigation li a {
-  color: gray;
-  cursor: pointer;
-  font-size: 18px; }
-.navigation li a:hover {
-  color: black; }
-.navigation li a:active {
-  color: gray; }
-.navigation li:not(:last-child):after {
-  content: '|';
-  margin: 0 5px;
-  color: gray; }
+.navigation {
+  margin-right: 80px; }
+  .navigation #navList {
+    display: flex; }
+  .navigation ._active a {
+    color: #ff002b;
+    cursor: default; }
+    .navigation ._active a:hover {
+      color: #ff002b; }
+    .navigation ._active a:active {
+      color: #ff002b; }
+  .navigation #navList li a {
+    color: gray;
+    cursor: pointer;
+    font-size: 18px; }
+  .navigation #navList li a:hover {
+    color: black; }
+  .navigation #navList li a:active {
+    color: gray; }
+  .navigation #navList li:not(:last-child):after {
+    content: '|';
+    margin: 0 5px;
+    color: gray; }
+
+.sm-menu-button {
+  display: none; }
 
 @media (max-width: 960px) {
-  .navigation__wrapper {
-    padding: 0 8px; }
+  .header {
+    width: 100%; }
+    .header__wrapper {
+      padding: 3px 0;
+      flex-direction: column; }
+    .header__logo {
+      margin-left: 8px; }
 
   .preheader {
-    padding: 5px 8px; } }
+    padding: 5px 8px; }
+
+  .navigation {
+    margin-right: 0;
+    width: 100%; }
+
+  #navList {
+    flex-direction: column; }
+    #navList li {
+      border-top: 1px solid #d4d4d4;
+      padding: 10px 8px; }
+
+  .sm-menu-button {
+    margin-right: 8px;
+    display: block; } }
+.headline {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/2.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
