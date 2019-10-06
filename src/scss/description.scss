@@ -1,0 +1,46 @@
+#technologies {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+
+  & img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+#features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+
+  background-image: url('../images/congruent_outline.png');
+
+  & img {
+    width: 70px;
+    width: 70px;
+    margin: 20px 0;
+
+    border: 3px solid #a1a1a1;
+    border-radius: 70px;
+    background-color: rgba(161, 161, 161, 0.2);
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  #technologies img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

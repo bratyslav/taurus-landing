@@ -1,4 +1,9 @@
 // Arrays of data
+const networkItems = [
+  'facebook',
+  'instagram',
+  'linkedin',
+];
 const navLinks = [
   {
     title: 'Home',
@@ -61,6 +66,19 @@ const featuresList = [
   '../images/img7-1.png',
   '../images/img8-1.png',
 ];
+
+
+
+// Render a network links
+const networks = document.getElementById('networks');
+
+networks.innerHTML = `${
+  networkItems.map(item => (`
+    <a href="https://www.${item}.com/" title="www.${item}.com">
+      <img class="logo" src="../images/${item}-app-symbol.svg" alt="${item} logo">
+    </a>
+  `))
+}`.replace(/,/g, '');
 
 
 
