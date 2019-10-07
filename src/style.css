@@ -98,7 +98,8 @@ header {
     color: #ff002b !important;
     cursor: default !important; }
     .navigation ._active a:hover {
-      color: #ff002b !important; }
+      color: #ff002b !important;
+      background-color: white !important; }
     .navigation ._active a:active {
       color: #ff002b !important; }
   .navigation #navList li a {
@@ -136,8 +137,12 @@ header {
   #navList {
     flex-direction: column; }
     #navList li {
-      border-top: 1px solid #d4d4d4;
-      padding: 10px 8px; }
+      border-top: 1px solid #d4d4d4; }
+      #navList li a {
+        display: block;
+        padding: 10px 8px; }
+      #navList li a:hover {
+        background-color: #ececec; }
       #navList li:after {
         display: none; }
 

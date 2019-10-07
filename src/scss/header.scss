@@ -112,6 +112,7 @@ header {
 
     &:hover {
       color: #ff002b !important;
+      background-color: white !important;
     }
 
     &:active {
@@ -177,7 +178,15 @@ header {
 
     & li {
       border-top: 1px solid #d4d4d4;
-      padding: 10px 8px;
+
+      & a {
+        display: block;
+        padding: 10px 8px;
+      }
+
+      & a:hover {
+        background-color: #ececec;
+      }
 
       &:after {
         display: none;
