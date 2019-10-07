@@ -16,8 +16,13 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
+  padding-bottom: 20px;
 
   background-image: url('../images/congruent_outline.png');
+
+  & div {
+    text-align: center;
+  }
 
   & img {
     width: 70px;
@@ -32,6 +37,12 @@
     &:hover {
       background-color: white;
     }
+  }
+
+  & h3 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
   }
 }
 
@@ -67,6 +78,11 @@
   .qualities {
     flex-direction: column;
   }
+
+  #features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 520px) {
@@ -76,8 +92,8 @@
   }
 
   #features {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
   }
 
   .qualities {

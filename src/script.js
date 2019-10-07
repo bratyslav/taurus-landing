@@ -57,14 +57,38 @@ const technologiesList = [
   },
 ];
 const featuresList = [
-  '../images/img1-2.png',
-  '../images/img2-1.png',
-  '../images/img3-1.png',
-  '../images/img4-1.png',
-  '../images/img5-1.png',
-  '../images/img6-1.png',
-  '../images/img7-1.png',
-  '../images/img8-1.png',
+  {
+    'imageUrl': '../images/img1-2.png',
+    'description': 'intranets',
+  },
+  {
+    'imageUrl': '../images/img2-1.png',
+    'description': 'sharepoint branding',
+  },
+  {
+    'imageUrl': '../images/img3-1.png',
+    'description': 'business process automation',
+  },
+  {
+    'imageUrl': '../images/img4-1.png',
+    'description': 'migration & hyubrid deployment',
+  },
+  {
+    'imageUrl': '../images/img5-1.png',
+    'description': 'infopath forms & mintex workflows',
+  },
+  {
+    'imageUrl': '../images/img6-1.png',
+    'description': 'custom applications & integration',
+  },
+  {
+    'imageUrl': '../images/img7-1.png',
+    'description': 'sharepoint maintenance',
+  },
+  {
+    'imageUrl': '../images/img8-1.png',
+    'description': 'mobile applications development (android, ios, windows)',
+  },
 ];
 
 
@@ -111,7 +135,10 @@ const features = document.getElementById('features');
 
 features.innerHTML = `${
   featuresList.map(feature => (`
-    <img src="${feature}">
+    <div>
+      <img src="${feature.imageUrl}">
+      <h3>${feature.description}</h3>
+    </div>
   `))
 }`.replace(/,/g, '');
 
