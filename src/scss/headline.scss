@@ -9,6 +9,10 @@ h1 {
   background-image: url('../images/2.jpg');
   background-position: center;
   background-size: cover;
+  // parallax
+  position: sticky;
+  top: 101px;
+  z-index: -1;
 
   & h2 {
     color: white;
