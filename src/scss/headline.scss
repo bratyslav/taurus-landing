@@ -1,10 +1,10 @@
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .headline {
-  padding: 120px 80px;
+  padding: 200px 150px;
 
   background-image: url('../images/2.jpg');
   background-position: center;
@@ -12,21 +12,22 @@ h1 {
 
   & h2 {
     color: white;
+    font-size: 30px;
   }
 }
 
 
 
-@media (min-width: 1140px) {
+@media (max-width: 1140px) {
   h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   
   .headline {
-    padding: 200px 150px;
+    padding: 120px 80px;
   
     & h2 {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 }
