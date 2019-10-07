@@ -16,7 +16,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  padding-bottom: 20px;
+  padding: 10px 10px 20px;
 
   background-image: url('../images/congruent_outline.png');
 
@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   #technologies img {
     width: 40px;
     height: 40px;

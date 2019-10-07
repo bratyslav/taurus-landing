@@ -1,5 +1,5 @@
 .footer {
-  padding: 20px 0;
+  padding: 20px 10px;
 
   background-color: #ec1337;
   color: white;
@@ -14,7 +14,9 @@
     padding-top: 20px;
 
     & span {
-      margin-right: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
 
       font-size: 25px;
       white-space: nowrap;
@@ -23,6 +25,32 @@
     & img {
       width: 25px;
       margin-right: 5px;
+    }
+  }
+}
+
+
+
+@media (max-width: 720px) {
+  .footer {
+    
+    & h2 {
+      font-size: 20px;
+    }
+  
+    &__goals {
+      & span {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+  
+        font-size: 20px;
+      }
+  
+      & img {
+        width: 20px;
+        margin-right: 3px;
+      }
     }
   }
 }

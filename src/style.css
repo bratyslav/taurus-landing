@@ -189,7 +189,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  padding-bottom: 20px;
+  padding: 10px 10px 20px;
   background-image: url("../images/congruent_outline.png"); }
   #features div {
     text-align: center; }
@@ -230,7 +230,7 @@ h1 {
   #features {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); } }
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   #technologies img {
     width: 40px;
     height: 40px; }
@@ -248,7 +248,7 @@ h1 {
     height: 40px;
     margin-right: 5px; } }
 .footer {
-  padding: 20px 0;
+  padding: 20px 10px;
   background-color: #ec1337;
   color: white; }
   .footer h2 {
@@ -258,11 +258,23 @@ h1 {
     text-align: center;
     padding-top: 20px; }
     .footer__goals span {
-      margin-right: 30px;
       font-size: 25px;
       white-space: nowrap; }
+      .footer__goals span:not(:last-child) {
+        margin-right: 30px; }
     .footer__goals img {
       width: 25px;
       margin-right: 5px; }
+
+@media (max-width: 720px) {
+  .footer h2 {
+    font-size: 20px; }
+  .footer__goals span {
+    font-size: 20px; }
+    .footer__goals span:not(:last-child) {
+      margin-right: 15px; }
+  .footer__goals img {
+    width: 20px;
+    margin-right: 3px; } }
 
 /*# sourceMappingURL=style.css.map */
