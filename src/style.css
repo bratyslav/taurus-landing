@@ -225,5 +225,21 @@ h1 {
   .qualities img {
     height: 40px;
     margin-right: 5px; } }
+.footer {
+  padding: 20px 0;
+  background-color: #ec1337;
+  color: white; }
+  .footer h2 {
+    font-size: 25px;
+    text-align: center; }
+  .footer__goals {
+    text-align: center;
+    padding-top: 20px; }
+    .footer__goals span {
+      margin-right: 30px;
+      font-size: 25px; }
+    .footer__goals img {
+      width: 25px;
+      margin-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */
