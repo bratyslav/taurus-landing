@@ -15,7 +15,7 @@
 
     & span {
       &:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 70px;
       }
 
       font-size: 25px;
@@ -34,6 +34,12 @@
 @media (max-width: 1140px) {
   .footer {
     padding: 20px 10px;
+
+    &__goals span {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 }
 
