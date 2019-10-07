@@ -237,7 +237,8 @@ h1 {
     padding-top: 20px; }
     .footer__goals span {
       margin-right: 30px;
-      font-size: 25px; }
+      font-size: 25px;
+      white-space: nowrap; }
     .footer__goals img {
       width: 25px;
       margin-right: 5px; }
