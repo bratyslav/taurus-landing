@@ -124,9 +124,25 @@ const technologies = document.getElementById('technologies');
 
 technologies.innerHTML = `${
   technologiesList.map(technology => (`
-    <img src="${technology.imageUrl}">
+    <img class="carousel-image" src="${technology.imageUrl}">
   `))
 }`.replace(/,/g, '');
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel(
+    {
+      loop: true,
+      responsive: {
+        0: {
+          items: 6,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 3000
+        }
+      }
+    }
+  );
+});
 
 
 
